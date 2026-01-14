@@ -128,7 +128,8 @@
 		{
 			"date": "2026-01-16",
 			"type": "discussion",
-			"title": "HTML & CSS Demo (TBD)"
+			"title": "HTML & CSS Demo (Ziqi)",
+			"link": "discussions/d2-html-css.pdf"
 		},
 		{
 			"date": "2026-01-19",
@@ -175,7 +176,7 @@
 		{
 			"date": "2026-01-23",
 			"type": "discussion",
-			"title": "Javascript Demo (TBD)"
+			"title": "Javascript Demo (Weijun)"
 		},
 		{
 			"date": "2026-01-26",
@@ -210,7 +211,7 @@
 		{
 			"date": "2026-01-30",
 			"type": "discussion",
-			"title": "Vega-Lite Demo (TBD)"
+			"title": "Vega-Lite Demo (Weijun)"
 		},
 		{
 			"date": "2026-02-02",
@@ -323,7 +324,7 @@
 		{
 			"date": "2026-02-20",
 			"type": "discussion",
-			"title": "TA Office Hours (TBD)"
+			"title": "TA Office Hours (Ziqi)"
 		},
         {
 			"date": "2026-02-20",
