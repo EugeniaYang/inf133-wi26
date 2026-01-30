@@ -221,7 +221,8 @@
 		{
 			"date": "2026-01-30",
 			"type": "discussion",
-			"title": "Vega-Lite Demo (Weijun)"
+			"title": "Vega-Lite Demo (Weijun)",
+			"link":"https://inf133.netlify.app/vega_lite.html"
 		},
 		{
 			"date": "2026-02-02",
