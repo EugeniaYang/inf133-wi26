@@ -1,5 +1,5 @@
 <main class="container-fluid">
-   <p class="tbd">Updated for Winter 2026, but may still have some bugs.</p>
+   <p class="tbd">Adjusted for the great Spotify debacle of early-2026, but more adjustments may be needed.</p>
     <h1>{{assignment.title}}: {{assignment.name}}</h1>
     <h3>Due {{assignment.due}} PST</h3>
     <p><strong>This assignment may be completed in pairs (exactly two students enrolled in the class) or individually.</strong> You may choose your own partner or use Slack to help find one. Because the assignment features build on top of one another, it is recommended that you pair program rather than distribute the assignment features. There is no grade benefit or penalty to completing the assignment individually.</p>
@@ -36,10 +36,13 @@
     <p>When installing, if you run into issues which look like "permission denied", try changing <a href="https://github.com/angular/angular-cli/issues/6848#issuecomment-386120663">the permissions of the node_modules directory</a>. If you are still having trouble, ask on Slack or talk to the course staff. It's important to try to get the setup working sooner rather than later, even if you do not plan on working on the assignment until close to the deadline.</p>
     <p>You may get a warning that the version of Angular that you have installed is newer than the version of the project. You can safely ignore that in this assignment. Similarly, you may get warnings about deprecated functions or libraries, which you can also ignore.</p>
     <h4>Running the webserver</h4>
+    <p class="tbd">These instructions were true prior to Spotify's <a href="https://arstechnica.com/tech-policy/2025/12/worlds-largest-shadow-library-brags-it-scraped-300tb-of-spotify-music-metadata/">data breach</a> in December 2025. We hope that they will soon re-enable creation of accounts, but for now, there are different instructions. Please refer to your email and Slack for next steps.</p>
+    <s>
     <p>A Spotify Developer account is required to set up the Express webserver. Create a Spotify account or log in at <a href="https://developer.spotify.com/dashboard/">https://developer.spotify.com/dashboard/</a> and follow the instructions to create a client id. Name the app whatever you'd like. For the App description, enter:</p>
     <blockquote>This App is used to create a music browser as part of a course assignment for IN4MATX 133, User Interface Software, at the University of California, Irvine.</blockquote>
     <p>Indicate that you are building a Website and are not developing a commercial application.</p>
-    <p>Once you have created your application, be sure to set the redirect URI to <code>http://127.0.0.1:8888/callback</code>. This will tell Spotify to redirect back to our Express webserver once authentication and authorization is complete. You should also create a file in the <code>webserver</code> folder (not the <code>routes</code> folder), <code>client_secret.json</code>, with your consumer key and secret. It should be of the form:</p>
+    <p>Once you have created your application, be sure to set the redirect URI to <code>http://127.0.0.1:8888/callback</code>. This will tell Spotify to redirect back to our Express webserver once authentication and authorization is complete.</p>
+    <p>Place your <code>client_secret.json</code> file in the <code>webserver</code> folder (not the <code>routes</code> folder), with your consumer key and secret. It should be of the form:</p>
     <pre>{{ '{' }}
   "client_id": "Your Client Key",
   "client_secret": "Your Client Secret"
@@ -49,6 +52,7 @@
   "access_token": null,
   "refresh_token": null
  {{ '}' }} </pre>
+   </s>
     <p>To run the Express webserver, <code>cd</code> into the webserver folder and run <code>npm start</code>. This will start the webserver at <code>127.0.0.1:8888</code>. Be sure the dependencies have been installed first via <code>npm install</code>. If you navigate to this root page (<code>http://127.0.0.1:8888/</code>) in your browser, you'll likely get a error in your console suggesting that "No default engine was specified". This is because no endpoint is defined for the root page (see the <code>index.js</code> file to see the defined endpoints). If you open endpoints which are defined, like <code>http://127.0.0.1:8888/login</code>, you shouldn't get this error.</p>
     <p>If you make a change to code in the webserver (which you should not need to do to complete the required portions of this assignment), you will have to end the running program and re-run it. End it by typing <code>Ctrl-C</code> into the command line and then re-running it with <code>npm start</code>.</p>
     <h4>Running the client</h4>
