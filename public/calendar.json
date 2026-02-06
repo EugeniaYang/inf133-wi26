@@ -258,14 +258,11 @@
 		},
 		{
 			"date": "2026-02-05",
-			"type": "officehours_daniel"
-		},
-		{
-			"date": "2026-02-05",
 			"type": "lecture",
 			"title": "Components in Angular",
 			"link": "lectures/l10-angular_components.pdf",
-			"demo": "demos/l10-angular_components.zip"
+			"demo": "demos/l10-angular_components.zip",
+			"recording": "https://uci.yuja.com/V/Video?v=15298441&a=23698908"
 		},
 		{
 			"date": "2026-02-06",
